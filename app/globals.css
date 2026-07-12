@@ -1,0 +1,208 @@
+@import "tailwindcss";
+
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+/* ==========================
+   PANGO
+========================== */
+
+.pango-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* PANGOLIN */
+
+.pango-dance {
+  width: 550px;
+  max-width: 100%;
+  z-index: 10;
+
+  animation:
+    pangoBounce 1.6s ease-in-out infinite,
+    pangoRotate 1.6s ease-in-out infinite,
+    pangoGlow 2s ease-in-out infinite;
+
+  transform-origin: center bottom;
+}
+
+/* makin heboh kalau cursor diarahkan */
+
+.pango-dance:hover {
+
+  animation:
+    pangoBounce 0.8s ease-in-out infinite,
+    pangoRotate 0.8s ease-in-out infinite,
+    pangoGlow 1s ease-in-out infinite;
+
+}
+
+/* naik turun */
+
+@keyframes pangoBounce {
+
+  0% {
+    transform:
+      translateY(0px)
+      scale(1);
+  }
+
+  25% {
+    transform:
+      translateY(-20px)
+      scale(1.03);
+  }
+
+  50% {
+    transform:
+      translateY(0px)
+      scale(1);
+  }
+
+  75% {
+    transform:
+      translateY(-10px)
+      scale(1.02);
+  }
+
+  100% {
+    transform:
+      translateY(0px)
+      scale(1);
+  }
+
+}
+
+/* goyang kiri kanan */
+
+@keyframes pangoRotate {
+
+  0% {
+    rotate: -5deg;
+  }
+
+  25% {
+    rotate: 5deg;
+  }
+
+  50% {
+    rotate: -5deg;
+  }
+
+  75% {
+    rotate: 5deg;
+  }
+
+  100% {
+    rotate: -5deg;
+  }
+
+}
+
+/* glow berdenyut */
+
+@keyframes pangoGlow {
+
+  0% {
+    filter:
+      drop-shadow(0 0 20px rgba(0,255,120,.3))
+      drop-shadow(0 0 40px rgba(0,255,120,.3));
+  }
+
+  50% {
+    filter:
+      drop-shadow(0 0 35px rgba(0,255,120,.7))
+      drop-shadow(0 0 80px rgba(0,255,120,.6));
+  }
+
+  100% {
+    filter:
+      drop-shadow(0 0 20px rgba(0,255,120,.3))
+      drop-shadow(0 0 40px rgba(0,255,120,.3));
+  }
+
+}
+
+/* ==========================
+   MUSIC NOTES
+========================== */
+
+.music {
+
+  position: absolute;
+  color: #00ff88;
+  font-size: 48px;
+  font-weight: bold;
+
+  animation:
+    floatMusic 3s linear infinite,
+    spinMusic 4s linear infinite;
+
+}
+
+.music-1 {
+  left: 10%;
+  top: 15%;
+}
+
+.music-2 {
+  right: 10%;
+  top: 10%;
+  animation-delay: 1s;
+}
+
+.music-3 {
+  right: 0%;
+  top: 35%;
+  animation-delay: 2s;
+}
+
+/* nada naik */
+
+@keyframes floatMusic {
+
+  0% {
+    transform: translateY(0px);
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-80px);
+    opacity: 0;
+  }
+
+}
+
+/* nada muter */
+
+@keyframes spinMusic {
+
+  from {
+    rotate: 0deg;
+  }
+
+  to {
+    rotate: 360deg;
+  }
+
+}
