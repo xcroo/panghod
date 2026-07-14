@@ -136,7 +136,7 @@ export default function Home() {
       className="bg-white/5 border border-white/10 rounded-2xl p-5 hover:border-green-500/50 hover:bg-white/10 transition"
     >
       <h3 className="text-green-400 font-bold text-lg">
-        GeckoTerminal
+        Uniswap
       </h3>
 
       <p className="text-gray-400 text-sm mt-2">
