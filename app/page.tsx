@@ -1,6 +1,6 @@
 export default function Home() {
   const buyLink =
-    "https://bow.fun/?token=0x1527deB13AE41b34450e93b0A6123fafDAAF1b03";
+    "https://app.uniswap.org/swap?outputCurrency=0x1527deb13ae41b34450e93b0a6123fafdaaf1b03";
 
   return (
     <main className="min-h-screen bg-black text-white overflow-hidden">
@@ -53,7 +53,54 @@ export default function Home() {
           >
             BUY PANGO
           </a>
+<div className="grid md:grid-cols-3 gap-4 mt-10 w-full max-w-4xl">
 
+  <a
+    href="https://dexscreener.com/robinhood/0xd533bc6fe81ca62950ce2ea677ed4c45c134e301"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-white/5 border border-white/10 rounded-2xl p-5 hover:border-green-500/50 hover:bg-white/10 transition"
+  >
+    <h3 className="text-green-400 font-bold text-lg">
+      DexScreener
+    </h3>
+
+    <p className="text-gray-400 text-sm mt-2">
+      View chart and trading activity.
+    </p>
+  </a>
+
+  <a
+    href="https://www.defined.fi/robinhood/0xd533bc6fe81ca62950ce2ea677ed4c45c134e301?quoteToken=token1&cache=22945"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-white/5 border border-white/10 rounded-2xl p-5 hover:border-green-500/50 hover:bg-white/10 transition"
+  >
+    <h3 className="text-green-400 font-bold text-lg">
+      Defined
+    </h3>
+
+    <p className="text-gray-400 text-sm mt-2">
+      Advanced analytics and liquidity.
+    </p>
+  </a>
+
+  <a
+    href="https://www.geckoterminal.com/id/robinhood/pools/0xd533bc6fe81ca62950ce2ea677ed4c45c134e301"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-white/5 border border-white/10 rounded-2xl p-5 hover:border-green-500/50 hover:bg-white/10 transition"
+  >
+    <h3 className="text-green-400 font-bold text-lg">
+      GeckoTerminal
+    </h3>
+
+    <p className="text-gray-400 text-sm mt-2">
+      Track price, volume and liquidity.
+    </p>
+  </a>
+
+</div>
         </div>
       </nav>
 
