@@ -1,21 +1,25 @@
 export default function Home() {
+  const buyLink =
+    "https://bow.fun/?token=0x1527deB13AE41b34450e93b0A6123fafDAAF1b03";
+
+  const contract =
+    "0x1527deb13ae41b34450e93b0a6123fafdaaf1b03";
+
   return (
     <main className="min-h-screen bg-black text-white overflow-hidden">
 
-      {/* BACKGROUND */}
+      {/* Background */}
       <div className="fixed inset-0 -z-10">
         <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-green-500/20 blur-[180px]" />
         <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-green-400/10 blur-[180px]" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[900px] bg-green-300/5 blur-[220px]" />
       </div>
 
-      {/* NAVBAR */}
+      {/* Navbar */}
       <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-black/30 border-b border-white/10">
-
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
           <div className="flex items-center gap-3">
-
             <img
               src="/pango.png"
               alt="PANGO"
@@ -25,11 +29,9 @@ export default function Home() {
             <span className="font-bold text-xl text-green-400">
               PANGO
             </span>
-
           </div>
 
           <div className="hidden md:flex items-center gap-8 text-gray-300">
-
             <a href="#about" className="hover:text-green-400 transition">
               About
             </a>
@@ -45,18 +47,21 @@ export default function Home() {
             <a href="#disclaimer" className="hover:text-green-400 transition">
               Disclaimer
             </a>
-
           </div>
 
-          <button className="px-5 py-2 rounded-xl bg-green-500 text-black font-bold hover:bg-green-400 transition">
+          <a
+            href={buyLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-5 py-2 rounded-xl bg-green-500 text-black font-bold hover:bg-green-400 transition"
+          >
             BUY PANGO
-          </button>
+          </a>
 
         </div>
-
       </nav>
 
-      {/* HERO */}
+      {/* Hero */}
       <section className="flex flex-col items-center justify-center min-h-screen text-center px-6">
 
         <div className="text-green-400 tracking-[0.4em] uppercase text-sm mb-4">
@@ -89,22 +94,22 @@ export default function Home() {
           Now it's on Robinhood Chain.
         </p>
 
-        <button className="mt-10 px-8 py-4 rounded-2xl bg-green-500 text-black font-bold text-lg hover:bg-green-400 transition">
+        <a
+          href={buyLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-10 px-8 py-4 rounded-2xl bg-green-500 text-black font-bold text-lg hover:bg-green-400 transition inline-block"
+        >
           BUY PANGO
-        </button>
-
-        <p className="mt-4 text-gray-500">
-          Coming Soon
-        </p>
+        </a>
 
       </section>
 
-      {/* ABOUT */}
+      {/* About */}
       <section
         id="about"
         className="max-w-6xl mx-auto px-6 py-24"
       >
-
         <h2 className="text-5xl font-bold text-center text-green-400">
           What Is PANGO?
         </h2>
@@ -134,10 +139,9 @@ export default function Home() {
           </p>
 
         </div>
-
       </section>
 
-      {/* WHY */}
+      {/* Why */}
       <section
         id="why"
         className="max-w-7xl mx-auto px-6 py-20"
@@ -150,46 +154,31 @@ export default function Home() {
         <div className="grid md:grid-cols-3 gap-8 mt-16">
 
           <div className="bg-white/5 border border-white/10 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 hover:border-green-500/50 hover:bg-white/10">
-
-            <h3 className="text-2xl font-bold text-green-400">
-              Rolls
-            </h3>
-
+            <h3 className="text-2xl font-bold text-green-400">Rolls</h3>
             <p className="mt-4 text-gray-400">
               PANGO rolls into a ball when life gets scary.
             </p>
-
           </div>
 
           <div className="bg-white/5 border border-white/10 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 hover:border-green-500/50 hover:bg-white/10">
-
-            <h3 className="text-2xl font-bold text-green-400">
-              Climbs
-            </h3>
-
+            <h3 className="text-2xl font-bold text-green-400">Climbs</h3>
             <p className="mt-4 text-gray-400">
               Sometimes it climbs things.
             </p>
-
           </div>
 
           <div className="bg-white/5 border border-white/10 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 hover:border-green-500/50 hover:bg-white/10">
-
-            <h3 className="text-2xl font-bold text-green-400">
-              Exists
-            </h3>
-
+            <h3 className="text-2xl font-bold text-green-400">Exists</h3>
             <p className="mt-4 text-gray-400">
               Most importantly, it continues to exist.
             </p>
-
           </div>
 
         </div>
 
       </section>
 
-      {/* TOKEN INFO */}
+      {/* Token */}
       <section
         id="token"
         className="max-w-7xl mx-auto px-6 py-24"
@@ -220,16 +209,23 @@ export default function Home() {
 
           <div className="bg-white/5 rounded-3xl p-8 border border-white/10">
             <p className="text-gray-500">Contract</p>
-            <h3 className="text-xl font-bold mt-2 text-green-400">
-              Coming Soon
-            </h3>
+
+            <a
+              href={buyLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-green-400 text-sm break-all hover:underline"
+            >
+              {contract}
+            </a>
+
           </div>
 
         </div>
 
       </section>
 
-      {/* DISCLAIMER */}
+      {/* Disclaimer */}
       <section
         id="disclaimer"
         className="max-w-5xl mx-auto px-6 py-24 text-center"
@@ -259,7 +255,7 @@ export default function Home() {
 
       </section>
 
-      {/* FOOTER */}
+      {/* Footer */}
       <footer className="border-t border-white/10 py-12 text-center">
 
         <h3 className="text-4xl font-bold text-green-400">
