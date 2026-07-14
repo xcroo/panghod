@@ -1,6 +1,6 @@
 export default function Home() {
   const buyLink =
-    "https://app.uniswap.org/swap?outputCurrency=0x1527deb13ae41b34450e93b0a6123fafdaaf1b03";
+    "https://bow.fun/?token=0x1527deb13ae41b34450e93b0a6123fafdaaf1b03";
 
   return (
     <main className="min-h-screen bg-black text-white overflow-hidden">
@@ -130,7 +130,7 @@ export default function Home() {
     </a>
 
     <a
-      href="https://www.geckoterminal.com/id/robinhood/pools/0xd533bc6fe81ca62950ce2ea677ed4c45c134e301"
+      href="https://app.uniswap.org/swap?outputCurrency=0x1527deb13ae41b34450e93b0a6123fafdaaf1b03"
       target="_blank"
       rel="noopener noreferrer"
       className="bg-white/5 border border-white/10 rounded-2xl p-5 hover:border-green-500/50 hover:bg-white/10 transition"
@@ -140,7 +140,7 @@ export default function Home() {
       </h3>
 
       <p className="text-gray-400 text-sm mt-2">
-        Track price, volume and liquidity.
+        Decentralized Finance
       </p>
     </a>
 
