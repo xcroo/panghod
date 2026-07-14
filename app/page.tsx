@@ -1,6 +1,6 @@
 export default function Home() {
   const buyLink =
-    "https://bow.fun/?token=0x1527deB13AE41b34450e93b0A6123fafDAAF1b03";
+    "https://app.uniswap.org/swap?outputCurrency=0x1527deb13ae41b34450e93b0a6123fafdaaf1b03";
 
   return (
     <main className="min-h-screen bg-black text-white overflow-hidden">
