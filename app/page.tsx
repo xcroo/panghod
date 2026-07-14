@@ -190,36 +190,22 @@ export default function Home() {
 
         <div className="grid md:grid-cols-4 gap-6 mt-16">
 
-          <div className="bg-white/5 rounded-3xl p-8 border border-white/10">
-            <p className="text-gray-500">Name</p>
-            <h3 className="text-2xl font-bold mt-2">PANGO</h3>
-          </div>
+          <div className="bg-white/5 rounded-3xl p-8 border border-white/10 transition-all duration-300 hover:border-green-500/50 hover:bg-white/10">
+  <p className="text-gray-500">Contract</p>
 
-          <div className="bg-white/5 rounded-3xl p-8 border border-white/10">
-            <p className="text-gray-500">Ticker</p>
-            <h3 className="text-2xl font-bold mt-2">$PANGO</h3>
-          </div>
+  <a
+    href="https://robinhoodchain.blockscout.com/token/0x1527deB13AE41b34450e93b0A6123fafDAAF1b03"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-green-400 text-sm break-all hover:text-green-300 hover:underline transition"
+  >
+    0x1527deb13ae41b34450e93b0a6123fafdaaf1b03
+  </a>
 
-          <div className="bg-white/5 rounded-3xl p-8 border border-white/10">
-            <p className="text-gray-500">Chain</p>
-            <h3 className="text-2xl font-bold mt-2">
-              Robinhood Chain
-            </h3>
-          </div>
-
-          <div className="bg-white/5 rounded-3xl p-8 border border-white/10">
-            <p className="text-gray-500">Contract</p>
-
-            <a
-              href={buyLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-green-400 text-sm break-all hover:underline"
-            >
-              {contract}
-            </a>
-
-          </div>
+  <p className="mt-2 text-xs text-gray-500">
+    View on Robinhood Chain Explorer ?
+  </p>
+</div>
 
         </div>
 
