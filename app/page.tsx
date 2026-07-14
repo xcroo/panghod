@@ -46,14 +46,16 @@ export default function Home() {
           </div>
 
           <a
-            href={buyLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-5 py-2 rounded-xl bg-green-500 text-black font-bold hover:bg-green-400 transition"
-          >
-            BUY PANGO
-          </a>
-<div className="grid md:grid-cols-3 gap-4 mt-10 w-full max-w-4xl">
+  href={buyLink}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mt-10 px-8 py-4 rounded-2xl bg-green-500 text-black font-bold text-lg hover:bg-green-400 transition inline-block"
+>
+  BUY PANGO
+</a>
+
+<div className="mt-16 w-full max-w-5xl">
+  <div className="grid md:grid-cols-3 gap-4">
 
   <a
     href="https://dexscreener.com/robinhood/0xd533bc6fe81ca62950ce2ea677ed4c45c134e301"
@@ -98,8 +100,9 @@ export default function Home() {
     <p className="text-gray-400 text-sm mt-2">
       Track price, volume and liquidity.
     </p>
-  </a>
+ </a>
 
+  </div>
 </div>
         </div>
       </nav>
