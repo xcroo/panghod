@@ -2,9 +2,6 @@ export default function Home() {
   const buyLink =
     "https://bow.fun/?token=0x1527deB13AE41b34450e93b0A6123fafDAAF1b03";
 
-  const contract =
-    "0x1527deb13ae41b34450e93b0a6123fafdaaf1b03";
-
   return (
     <main className="min-h-screen bg-black text-white overflow-hidden">
 
@@ -25,7 +22,6 @@ export default function Home() {
               alt="PANGO"
               className="w-10 h-10 object-contain"
             />
-
             <span className="font-bold text-xl text-green-400">
               PANGO
             </span>
@@ -61,7 +57,7 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* Hero */}
+      {/* HERO */}
       <section className="flex flex-col items-center justify-center min-h-screen text-center px-6">
 
         <div className="text-green-400 tracking-[0.4em] uppercase text-sm mb-4">
@@ -105,11 +101,12 @@ export default function Home() {
 
       </section>
 
-      {/* About */}
+      {/* ABOUT */}
       <section
         id="about"
         className="max-w-6xl mx-auto px-6 py-24"
       >
+
         <h2 className="text-5xl font-bold text-center text-green-400">
           What Is PANGO?
         </h2>
@@ -118,30 +115,21 @@ export default function Home() {
 
           <p>PANGO is a pangolin.</p>
 
-          <p className="mt-4">
-            That's the project.
-          </p>
+          <p className="mt-4">That's the project.</p>
 
-          <p className="mt-4">
-            No roadmap.
-          </p>
+          <p className="mt-4">No roadmap.</p>
 
-          <p className="mt-4">
-            No promises.
-          </p>
+          <p className="mt-4">No promises.</p>
 
-          <p className="mt-4">
-            No master plan.
-          </p>
+          <p className="mt-4">No master plan.</p>
 
-          <p className="mt-4">
-            Just a pangolin.
-          </p>
+          <p className="mt-4">Just a pangolin.</p>
 
         </div>
+
       </section>
 
-      {/* Why */}
+      {/* WHY */}
       <section
         id="why"
         className="max-w-7xl mx-auto px-6 py-20"
@@ -153,22 +141,31 @@ export default function Home() {
 
         <div className="grid md:grid-cols-3 gap-8 mt-16">
 
-          <div className="bg-white/5 border border-white/10 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 hover:border-green-500/50 hover:bg-white/10">
-            <h3 className="text-2xl font-bold text-green-400">Rolls</h3>
+          <div className="bg-white/5 border border-white/10 rounded-3xl p-8">
+            <h3 className="text-2xl font-bold text-green-400">
+              Rolls
+            </h3>
+
             <p className="mt-4 text-gray-400">
               PANGO rolls into a ball when life gets scary.
             </p>
           </div>
 
-          <div className="bg-white/5 border border-white/10 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 hover:border-green-500/50 hover:bg-white/10">
-            <h3 className="text-2xl font-bold text-green-400">Climbs</h3>
+          <div className="bg-white/5 border border-white/10 rounded-3xl p-8">
+            <h3 className="text-2xl font-bold text-green-400">
+              Climbs
+            </h3>
+
             <p className="mt-4 text-gray-400">
               Sometimes it climbs things.
             </p>
           </div>
 
-          <div className="bg-white/5 border border-white/10 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 hover:border-green-500/50 hover:bg-white/10">
-            <h3 className="text-2xl font-bold text-green-400">Exists</h3>
+          <div className="bg-white/5 border border-white/10 rounded-3xl p-8">
+            <h3 className="text-2xl font-bold text-green-400">
+              Exists
+            </h3>
+
             <p className="mt-4 text-gray-400">
               Most importantly, it continues to exist.
             </p>
@@ -178,7 +175,7 @@ export default function Home() {
 
       </section>
 
-      {/* Token */}
+      {/* TOKEN INFO */}
       <section
         id="token"
         className="max-w-7xl mx-auto px-6 py-24"
@@ -190,28 +187,45 @@ export default function Home() {
 
         <div className="grid md:grid-cols-4 gap-6 mt-16">
 
-          <div className="bg-white/5 rounded-3xl p-8 border border-white/10 transition-all duration-300 hover:border-green-500/50 hover:bg-white/10">
-  <p className="text-gray-500">Contract</p>
+          <div className="bg-white/5 rounded-3xl p-8 border border-white/10">
+            <p className="text-gray-500">Name</p>
+            <h3 className="text-2xl font-bold mt-2">PANGO</h3>
+          </div>
 
-  <a
-    href="https://robinhoodchain.blockscout.com/token/0x1527deB13AE41b34450e93b0A6123fafDAAF1b03"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-green-400 text-sm break-all hover:text-green-300 hover:underline transition"
-  >
-    0x1527deb13ae41b34450e93b0a6123fafdaaf1b03
-  </a>
+          <div className="bg-white/5 rounded-3xl p-8 border border-white/10">
+            <p className="text-gray-500">Ticker</p>
+            <h3 className="text-2xl font-bold mt-2">$PANGO</h3>
+          </div>
 
-  <p className="mt-2 text-xs text-gray-500">
-    View on Robinhood Chain Explorer ?
-  </p>
-</div>
+          <div className="bg-white/5 rounded-3xl p-8 border border-white/10">
+            <p className="text-gray-500">Chain</p>
+            <h3 className="text-2xl font-bold mt-2">
+              Robinhood Chain
+            </h3>
+          </div>
+
+          <div className="bg-white/5 rounded-3xl p-8 border border-white/10">
+            <p className="text-gray-500">Contract</p>
+
+            <a
+              href="https://robinhoodchain.blockscout.com/token/0x1527deB13AE41b34450e93b0A6123fafDAAF1b03"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-green-400 text-sm break-all hover:text-green-300 hover:underline transition"
+            >
+              0x1527deb13ae41b34450e93b0a6123fafdaaf1b03
+            </a>
+
+            <p className="mt-2 text-xs text-gray-500">
+              View on Robinhood Chain Explorer ?
+            </p>
+          </div>
 
         </div>
 
       </section>
 
-      {/* Disclaimer */}
+      {/* DISCLAIMER */}
       <section
         id="disclaimer"
         className="max-w-5xl mx-auto px-6 py-24 text-center"
@@ -241,7 +255,7 @@ export default function Home() {
 
       </section>
 
-      {/* Footer */}
+      {/* FOOTER */}
       <footer className="border-t border-white/10 py-12 text-center">
 
         <h3 className="text-4xl font-bold text-green-400">
